@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "taskmd_lite"
+version = "0.1.0"
+description = "A lightweight TaskMD version utilizing Markdown."
+readme = "taskmd_lite_core_docs_v3/README-lite.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0",
+]
+
+[project.scripts]
+tm = "taskmd_lite.cli:main"
